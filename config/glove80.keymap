@@ -52,7 +52,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            hold-trigger-key-positions = <55 56 57 73 74 72 79 78 62 63 45 44 33 32 21 20 9 8 7 19 31 43 77 76 60 61 42 30 18 6 5 17 29 41 75 58 40 59 28 16>;
+            hold-trigger-key-positions = <55 56 57 73 74 72 79 78 62 63 45 44 33 32 21 20 9 8 7 19 31 43 77 76 60 61 42 30 18 6 5 17 29 41 75 58 40 59 28 16 52 53 54 71 70 69>;
         };
 
         hmr: hmr {
@@ -66,7 +66,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            hold-trigger-key-positions = <54 71 70 53 52 69 68 51 50 38 39 27 26 14 4 15 3 13 25 37 49 67 66 36 24 12 2 1 11 23 35 47 48 65 64 46 34 22 10 0>;
+            hold-trigger-key-positions = <54 71 70 53 52 69 68 51 50 38 39 27 26 14 4 15 3 13 25 37 49 67 66 36 24 12 2 1 11 23 35 47 48 65 64 46 34 22 10 0 55 56 57 74 73 72>;
         };
     };
 
@@ -159,6 +159,17 @@
 &kp N3  &kp N9  &kp N5  &kp N1  &kp N7  &kp N2                                                  &kp N2  &kp N7  &kp N1  &kp N5  &kp N9  &kp N3
 &kp N4  &kp N0  &kp N6  &kp N2  &kp N8  &kp N3  &kp N4  &kp N5  &kp N6  &kp N6  &kp N5  &kp N4  &kp N3  &kp N8  &kp N2  &kp N6  &kp N0  &kp N4
 &kp N5  &kp N1  &kp N7  &kp N3  &kp N9          &kp N7  &kp N8  &kp N9  &kp N9  &kp N8  &kp N7          &kp N9  &kp N3  &kp N7  &kp N1  &kp N5
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&kp ESC    &kp N2    &trans   &trans    &trans                                                                                      &trans  &trans     &trans    &trans    &trans
+&kp GRAVE  &kp N1    &kp N2   &kp N3    &kp N4     &kp N5                                                                   &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q     &kp W    &kp E     &kp R      &kp T                                                                    &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp A      &kp A     &kp S    &kp D     &kp F      &kp G                                                                    &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z     &kp X    &kp C     &kp V      &kp B   &kp LALT   &kp LCTRL  &kp LCTRL  &trans    &kp RCTRL  &kp RSHFT  &kp N   &kp M   &kp COMMA  &kp DOT   &kp SEMI  &kp SQT
+&kp LALT   &kp HOME  &kp END  &kp LEFT  &kp RIGHT          &kp LCTRL  &kp SPACE  &kp RET    &kp RALT  &kp BSPC   &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &kp PG_DN
             >;
         };
     };
