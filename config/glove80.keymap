@@ -161,6 +161,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_parenth_left {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <30 29>;
+        };
+
+        combo_parenth_right {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <31 30>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
