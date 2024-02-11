@@ -193,6 +193,20 @@
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
+
+        hyphen {
+            bindings = <&kp MINUS>;
+            key-positions = <41 42>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <42 43>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
     };
 
     keymap {
