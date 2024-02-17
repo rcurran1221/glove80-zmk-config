@@ -186,6 +186,13 @@
             layers = <0>;
             require-prior-idle-ms = <150>;
         };
+
+        test {
+            bindings = <&kp ASTERISK>;
+            key-positions = <41 42>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
     };
 
     keymap {
