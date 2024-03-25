@@ -134,9 +134,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
         };
 
         hm_tap_short: hm_tap_short {
@@ -145,9 +145,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
         };
     };
 
