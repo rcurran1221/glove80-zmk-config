@@ -86,7 +86,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <160>;
             quick-tap-ms = <175>;
             flavor = "balanced";
             hold-trigger-key-positions = <55 56 57 73 74 72 79 78 62 63 45 44 33 32 21 20 9 8 7 19 31 43 77 76 60 61 42 30 18 6 5 17 29 41 75 58 40 59 28 16 52 53 54 71 70 69>;
@@ -98,7 +98,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <160>;
             quick-tap-ms = <175>;
             flavor = "balanced";
             hold-trigger-key-positions = <54 71 70 53 52 69 68 51 50 38 39 27 26 14 4 15 3 13 25 37 49 67 66 36 24 12 2 1 11 23 35 47 48 65 64 46 34 22 10 0 55 56 57 74 73 72>;
@@ -212,12 +212,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1      &kp F2           &kp F3           &kp F4               &kp F5                                                                                                                &kp F6                    &kp F7                &kp F8            &kp F9                    &mt F11 F10
-&kp EQUAL   &kp N1           &kp N2           &kp N3               &kp N4                   &kp N5                                                                               &kp N6  &kp N7                    &kp N8                &kp N9            &kp N0                    &kp MINUS
-&kp DEL     &kp Q            &kp W            &kp E                &kp R                    &kp T                                                                                &kp Y   &kp U                     &kp I                 &kp O             &kp P                     &kp BSLH
-&kp ESC     &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml_shift LEFT_SHIFT F  &kp G                                                                                &kp H   &hmr_shift RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SQT
-&kp GRAVE   &lt_left 4 Z     &kp X            &kp C                &kp V                    &kp B   &kp LSHFT  &kp LCTRL  &layer_td     &kp LGUI       &kp RCTRL      &kp RSHFT  &kp N   &kp M                     &kp COMMA             &kp DOT           &lt_right 4 SLASH         &kp PG_UP
-&magic 2 0  &kp HOME         &kp END          &kp LEFT             &kp RIGHT                        &kp ENTER  &kp TAB    &kp LEFT_ALT  &kp RIGHT_ALT  &kp BACKSPACE  &kp SPACE          &kp UP                    &kp DOWN              &kp LBKT          &kp RBKT                  &kp PG_DN
+&kp F1      &kp F2           &kp F3           &kp F4               &kp F5                                                                                                                      &kp F6                    &kp F7                &kp F8            &kp F9                    &mt F11 F10
+&kp EQUAL   &kp N1           &kp N2           &kp N3               &kp N4                   &kp N5                                                                                     &kp N6  &kp N7                    &kp N8                &kp N9            &kp N0                    &kp MINUS
+&kp DEL     &kp Q            &kp W            &kp E                &kp R                    &kp T                                                                                      &kp Y   &kp U                     &kp I                 &kp O             &kp P                     &kp BSLH
+&kp ESC     &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml_shift LEFT_SHIFT F  &lt_left 6 G                                                                               &kp H   &hmr_shift RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SQT
+&kp GRAVE   &lt_left 4 Z     &kp X            &kp C                &kp V                    &kp B         &kp LSHFT  &kp LCTRL  &layer_td     &kp LGUI       &kp RCTRL      &kp RSHFT  &kp N   &kp M                     &kp COMMA             &kp DOT           &lt_right 4 SLASH         &kp PG_UP
+&magic 2 0  &kp HOME         &kp END          &kp LEFT             &kp RIGHT                              &kp ENTER  &kp TAB    &kp LEFT_ALT  &kp RIGHT_ALT  &kp BACKSPACE  &kp SPACE          &kp UP                    &kp DOWN              &kp LBKT          &kp RBKT                  &kp PG_DN
             >;
         };
 
@@ -239,7 +239,7 @@
 &none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none  &none  &none  &none  &none
 &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
 &sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
-&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &to 6
+&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &to 5
             >;
         };
 
@@ -265,17 +265,6 @@
             >;
         };
 
-        numbers {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &kp BSPC  &kp N0          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
         factory_test_layer {
             bindings = <
 &kp N0  &kp N6  &kp N2  &kp N8  &kp N4                                                                  &kp N4  &kp N8  &kp N2  &kp N6  &kp N0
@@ -284,6 +273,17 @@
 &kp N3  &kp N9  &kp N5  &kp N1  &kp N7  &kp N2                                                  &kp N2  &kp N7  &kp N1  &kp N5  &kp N9  &kp N3
 &kp N4  &kp N0  &kp N6  &kp N2  &kp N8  &kp N3  &kp N4  &kp N5  &kp N6  &kp N6  &kp N5  &kp N4  &kp N3  &kp N8  &kp N2  &kp N6  &kp N0  &kp N4
 &kp N5  &kp N1  &kp N7  &kp N3  &kp N9          &kp N7  &kp N8  &kp N9  &kp N9  &kp N8  &kp N7          &kp N9  &kp N3  &kp N7  &kp N1  &kp N5
+            >;
+        };
+
+        numbers {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &kp BSPC  &kp N0          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
