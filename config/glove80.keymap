@@ -110,7 +110,7 @@
             bindings = <&sk>;
             #binding-cells = <1>;
             quick-release;
-            release-after-ms = <900>;
+            release-after-ms = <600>;
         };
 
         hm_tap_pref: hm_tap_pref {
