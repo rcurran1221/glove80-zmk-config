@@ -218,6 +218,12 @@
             key-positions = <29 30>;
             layers = <0>;
         };
+
+        shiftyleft {
+            bindings = <&shifty>;
+            key-positions = <26 25>;
+            layers = <0>;
+        };
     };
 
     keymap {
