@@ -210,7 +210,15 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        shift {
+            bindings = <&shifty>;
+            key-positions = <29 30>;
+            layers = <0>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
