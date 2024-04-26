@@ -111,7 +111,6 @@
             label = "STICKY_SHIFT";
             bindings = <&sk>;
             #binding-cells = <1>;
-            quick-release;
             release-after-ms = <300>;
         };
 
