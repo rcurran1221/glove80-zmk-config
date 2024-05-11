@@ -69,17 +69,6 @@
             hold-trigger-key-positions = <54 71 70 53 52 69 68 51 50 38 39 27 26 14 4 15 3 13 25 37 49 67 66 36 24 12 2 1 11 23 35 47 48 65 64 46 34 22 10 0 55 56 57 74 73 72>;
         };
 
-        lt_tap_pref: lt_tap_pref {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_TAP_PREF";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <150>;
-            flavor = "tap-preferred";
-        };
-
         hml_shift: hml_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "HML_SHIFT";
@@ -113,28 +102,6 @@
             #binding-cells = <1>;
             release-after-ms = <300>;
             quick-release;
-        };
-
-        hm_tap_pref: hm_tap_pref {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HM_TAP_PREF";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <185>;
-            flavor = "tap-preferred";
-        };
-
-        hm_tap_short: hm_tap_short {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HM_TAP_SHORT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <185>;
-            flavor = "tap-preferred";
         };
 
         lt_left: lt_left {
