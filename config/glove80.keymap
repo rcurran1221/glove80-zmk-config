@@ -21,9 +21,6 @@
 
 &sk { quick-release; };
 
-&sl {
-};
-
 };
 
 / {
@@ -186,12 +183,6 @@ macros {
 };
 
 combos { compatible = "zmk,combos"; };
-
-macros {
-};
-
-behaviors {
-};
 
 keymap {
     compatible = "zmk,keymap";
