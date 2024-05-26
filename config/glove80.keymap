@@ -183,7 +183,7 @@
         compatible = "zmk,combos";
 
         tab {
-            bindings = <&kp TAB>;
+            bindings = <&hml LA(LEFT_CONTROL) TAB>;
             key-positions = <36 37>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
