@@ -267,7 +267,7 @@
         };
 
         dash {
-            bindings = <&hmr LA(LS(LEFT_CONTROL)) MINUS>;
+            bindings = <&hmr LS(LEFT_CONTROL) MINUS>;
             key-positions = <38 37>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
