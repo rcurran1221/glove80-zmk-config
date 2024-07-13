@@ -19,7 +19,7 @@
 #define MAGIC 2
 #define FACTORY_TEST 3
 
-#define short_combo_timeout 24
+#define SHORT_COMBO_TIMEOUT 24
 
 &sk { quick-release; };
 
@@ -215,7 +215,7 @@
         left_parent {
             bindings = <&hmr RS(RIGHT_CONTROL) LEFT_PARENTHESIS>;
             key-positions = <41 42>;
-            timeout-ms = short_combo_timeout;
+            timeout-ms = SHORT_COMBO_TIMEOUT;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
@@ -223,7 +223,7 @@
         right_paren {
             bindings = <&hmr RC(RIGHT_ALT) RIGHT_PARENTHESIS>;
             key-positions = <42 43>;
-            timeout-ms = short_combo_timeout;
+            timeout-ms = SHORT_COMBO_TIMEOUT;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
@@ -231,7 +231,7 @@
         left_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <29 30>;
-            timeout-ms = short_combo_timeout;
+            timeout-ms = SHORT_COMBO_TIMEOUT;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
@@ -239,7 +239,7 @@
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <30 31>;
-            timeout-ms = short_combo_timeout;
+            timeout-ms = SHORT_COMBO_TIMEOUT;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
@@ -247,7 +247,7 @@
         left_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <59 60>;
-            timeout-ms = short_combo_timeout;
+            timeout-ms = SHORT_COMBO_TIMEOUT;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
@@ -255,7 +255,7 @@
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <60 61>;
-            timeout-ms = short_combo_timeout;
+            timeout-ms = SHORT_COMBO_TIMEOUT;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
@@ -263,7 +263,7 @@
         underscore {
             bindings = <&hmr LC(LEFT_ALT) UNDERSCORE>;
             key-positions = <37 36>;
-            timeout-ms = short_combo_timeout;
+            timeout-ms = SHORT_COMBO_TIMEOUT;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
@@ -271,7 +271,7 @@
         dash {
             bindings = <&hmr LS(LEFT_CONTROL) MINUS>;
             key-positions = <38 37>;
-            timeout-ms = short_combo_timeout;
+            timeout-ms = SHORT_COMBO_TIMEOUT;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
@@ -279,7 +279,7 @@
         plus {
             bindings = <&kp PLUS>;
             key-positions = <26 25>;
-            timeout-ms = short_combo_timeout;
+            timeout-ms = SHORT_COMBO_TIMEOUT;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
@@ -287,7 +287,7 @@
         equals {
             bindings = <&kp EQUAL>;
             key-positions = <25 24>;
-            timeout-ms = short_combo_timeout;
+            timeout-ms = SHORT_COMBO_TIMEOUT;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
@@ -295,7 +295,7 @@
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <39 38>;
-            timeout-ms = short_combo_timeout;
+            timeout-ms = SHORT_COMBO_TIMEOUT;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
@@ -303,7 +303,7 @@
         caret {
             bindings = <&kp CARET>;
             key-positions = <35 36>;
-            timeout-ms = short_combo_timeout;
+            timeout-ms = SHORT_COMBO_TIMEOUT;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
