@@ -18,8 +18,8 @@
 #define LOWER 1
 #define MAGIC 2
 #define FACTORY_TEST 3
-#define SHORT_COMBO_TIMEOUT 36
-#define PRIOR_IDLE_COMBO 300
+#define SHORT_COMBO_TIMEOUT 18
+#define PRIOR_IDLE_COMBO 150
 
 &sk { quick-release; };
 
