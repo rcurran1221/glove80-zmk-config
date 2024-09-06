@@ -210,14 +210,14 @@
     };
 
     combos {
-        compatible = "zmk,combos";
-
+        
         left_parent {
             bindings = <&hmr RS(RIGHT_CONTROL) LEFT_PARENTHESIS>;
             key-positions = <41 42>;
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
 
         right_paren {
@@ -226,6 +226,7 @@
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
 
         left_bracket {
@@ -234,6 +235,7 @@
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
 
         right_bracket {
@@ -242,6 +244,7 @@
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
 
         left_brace {
@@ -250,6 +253,7 @@
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
 
         right_brace {
@@ -258,6 +262,7 @@
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
 
         underscore {
@@ -266,6 +271,7 @@
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
 
         dash {
@@ -274,6 +280,7 @@
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
 
         plus {
@@ -282,6 +289,7 @@
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
 
         equals {
@@ -290,6 +298,7 @@
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
 
         dollar {
@@ -298,6 +307,7 @@
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
 
         caret {
@@ -306,6 +316,7 @@
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
 
         bang {
@@ -314,6 +325,7 @@
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <150>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
 
         at {
@@ -322,6 +334,7 @@
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
 
         star {
@@ -330,6 +343,7 @@
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
 
         ampersand {
@@ -338,6 +352,7 @@
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
 
         percent {
@@ -346,6 +361,7 @@
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
+            compatible = "zmk,combos";
         };
     };
 
