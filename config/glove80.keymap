@@ -18,7 +18,7 @@
 #define LOWER 1
 #define MAGIC 2
 #define FACTORY_TEST 3
-#define SHORT_COMBO_TIMEOUT 36
+#define SHORT_COMBO_TIMEOUT 50
 #define PRIOR_IDLE_COMBO 150
 
 &sk { quick-release; };
@@ -211,6 +211,7 @@
 
     combos {
         compatible = "zmk,combos";
+        require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
 
         left_parent {
             bindings = <&hmr RS(RIGHT_CONTROL) LEFT_PARENTHESIS>;
