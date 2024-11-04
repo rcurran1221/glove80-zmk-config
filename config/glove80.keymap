@@ -21,7 +21,7 @@
 #define SHORT_COMBO_TIMEOUT 18
 #define PRIOR_IDLE_COMBO 150
 #define HOME_ROW_MOD_IDLE 150
-#define HOME_ROW_MOD_FLAVOR "tap-preferred"
+#define HOME_ROW_MOD_FLAVOR tap-preferred
 #define HOME_ROW_MOD_TERM 200
 &sk { quick-release; };
 
