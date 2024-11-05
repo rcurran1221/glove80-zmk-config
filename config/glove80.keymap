@@ -267,7 +267,7 @@
         underscore {
             bindings = <&hmr LC(LEFT_ALT) UNDERSCORE>;
             key-positions = <37 36>;
-            timeout-ms = <SHORT_COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
         };
@@ -275,7 +275,7 @@
         dash {
             bindings = <&hmr LS(LEFT_CONTROL) MINUS>;
             key-positions = <38 37>;
-            timeout-ms = <SHORT_COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
         };
@@ -283,7 +283,7 @@
         plus {
             bindings = <&kp PLUS>;
             key-positions = <26 25>;
-            timeout-ms = <SHORT_COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
         };
@@ -291,7 +291,7 @@
         equals {
             bindings = <&kp EQUAL>;
             key-positions = <25 24>;
-            timeout-ms = <SHORT_COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
         };
@@ -299,7 +299,7 @@
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <39 38>;
-            timeout-ms = <SHORT_COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
         };
@@ -307,7 +307,7 @@
         caret {
             bindings = <&kp CARET>;
             key-positions = <35 36>;
-            timeout-ms = <SHORT_COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
         };
@@ -315,7 +315,7 @@
         bang {
             bindings = <&kp EXCLAMATION>;
             key-positions = <23 24>;
-            timeout-ms = <SHORT_COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
@@ -323,7 +323,7 @@
         at {
             bindings = <&kp AT_SIGN>;
             key-positions = <47 48>;
-            timeout-ms = <SHORT_COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
         };
@@ -347,7 +347,7 @@
         percent {
             bindings = <&kp PERCENT>;
             key-positions = <26 27>;
-            timeout-ms = <SHORT_COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
         };
@@ -355,7 +355,7 @@
         lessthan {
             bindings = <&kp LESS_THAN>;
             key-positions = <50 51>;
-            timeout-ms = <SHORT_COMBO_TIMEOUT>;
+            timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
         };
