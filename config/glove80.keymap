@@ -23,7 +23,7 @@
 #define PRIOR_IDLE_COMBO 150
 #define HOME_ROW_MOD_IDLE 150
 #define MOD_FLAVOR "tap-preferred"
-#define MOD_TAP_TERM 200
+#define MOD_TAP_TERM 250
 
 &sk { quick-release; };
 
