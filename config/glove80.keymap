@@ -18,8 +18,8 @@
 #define LOWER 1
 #define MAGIC 2
 #define FACTORY_TEST 3
-#define SHORT_COMBO_TIMEOUT 18
-#define COMBO_TIMEOUT_LEFT 18
+#define SHORT_COMBO_TIMEOUT 24
+#define COMBO_TIMEOUT_LEFT 24
 #define PRIOR_IDLE_COMBO 150
 #define HOME_ROW_MOD_IDLE 150
 #define MOD_FLAVOR "tap-preferred"
