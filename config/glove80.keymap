@@ -22,8 +22,9 @@
 #define COMBO_TIMEOUT_LEFT 24
 #define PRIOR_IDLE_COMBO 150
 #define HOME_ROW_MOD_IDLE 150
-#define MOD_FLAVOR "tap-preferred"
-#define MOD_TAP_TERM 250
+#define MOD_FLAVOR "balanced"
+#define MOD_TAP_TERM 280
+#define MOD_QUICK_TAP 175
 
 &sk { quick-release; };
 
@@ -57,7 +58,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <MOD_TAP_TERM>;
             hold-trigger-on-release;
-            quick-tap-ms = <200>;
+            quick-tap-ms = <MOD_QUICK_TAP>;
             require-prior-idle-ms = <HOME_ROW_MOD_IDLE>;
             flavor =
             MOD_FLAVOR;
@@ -72,7 +73,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <MOD_TAP_TERM>;
             hold-trigger-on-release;
-            quick-tap-ms = <200>;
+            quick-tap-ms = <MOD_QUICK_TAP>;
             require-prior-idle-ms = <HOME_ROW_MOD_IDLE>;
             flavor =
             MOD_FLAVOR;
