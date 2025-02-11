@@ -438,12 +438,12 @@
 
         symbols {
             bindings = <
-&trans  &trans        &trans           &trans     &trans                                                                                &trans                &trans                 &trans     &trans          &trans
-&trans  &trans        &trans           &trans     &trans            &trans                                                      &trans  &trans                &trans                 &trans     &trans          &trans
-&trans  &kp ASTERISK  &kp AT_SIGN      &kp HASH   &kp AMPERSAND     &trans                                                      &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans     &trans          &trans
-&trans  &kp CARET     &kp EXCLAMATION  &kp EQUAL  &kp GREATER_THAN  &kp DOLLAR                                                  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp UNDERSCORE  &trans
-&trans  &trans        &kp PERCENT      &kp PLUS   &kp LESS_THAN     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &trans          &trans
-&trans  &trans        &trans           &trans     &trans                        &trans  &trans  &trans  &trans  &trans  &trans          &trans                &trans                 &trans     &trans          &trans
+&trans  &trans        &trans           &trans     &trans                                                                                &trans                &trans                 &trans          &trans  &trans
+&trans  &trans        &trans           &trans     &trans            &trans                                                      &trans  &trans                &trans                 &trans          &trans  &trans
+&trans  &kp ASTERISK  &kp AT_SIGN      &kp HASH   &kp AMPERSAND     &trans                                                      &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &trans  &trans
+&trans  &kp CARET     &kp EXCLAMATION  &kp EQUAL  &kp GREATER_THAN  &kp DOLLAR                                                  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &trans  &trans
+&trans  &trans        &kp PERCENT      &kp PLUS   &kp LESS_THAN     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans          &trans  &trans
+&trans  &trans        &trans           &trans     &trans                        &trans  &trans  &trans  &trans  &trans  &trans          &trans                &trans                 &trans          &trans  &trans
             >;
         };
 
