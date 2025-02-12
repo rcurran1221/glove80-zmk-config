@@ -25,6 +25,7 @@
 #define MOD_FLAVOR "balanced"
 #define MOD_TAP_TERM 280
 #define MOD_QUICK_TAP 175
+#define COMBO_LAYER 7
 
 &sk { quick-release; };
 
@@ -225,7 +226,7 @@
             key-positions = <41 42>;
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         right_paren {
@@ -233,7 +234,7 @@
             key-positions = <42 43>;
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         left_bracket {
@@ -241,7 +242,7 @@
             key-positions = <29 30>;
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         right_bracket {
@@ -249,7 +250,7 @@
             key-positions = <30 31>;
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         left_brace {
@@ -257,7 +258,7 @@
             key-positions = <59 60>;
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         right_brace {
@@ -265,7 +266,7 @@
             key-positions = <60 61>;
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         underscore {
@@ -273,7 +274,7 @@
             key-positions = <37 36>;
             timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         dash {
@@ -281,7 +282,7 @@
             key-positions = <38 37>;
             timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         plus {
@@ -289,7 +290,7 @@
             key-positions = <26 25>;
             timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         equals {
@@ -297,7 +298,7 @@
             key-positions = <25 24>;
             timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         dollar {
@@ -305,7 +306,7 @@
             key-positions = <39 38>;
             timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         caret {
@@ -313,7 +314,7 @@
             key-positions = <35 36>;
             timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         bang {
@@ -321,7 +322,7 @@
             key-positions = <23 24>;
             timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <150>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         at {
@@ -329,7 +330,7 @@
             key-positions = <47 48>;
             timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         // star {
@@ -337,7 +338,7 @@
         // key-positions = <31 32>;
         //timeout-ms = <SHORT_COMBO_TIMEOUT>;
         //require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-        //layers = <0>;
+        //layers = <COMBO_LAYER>;
         //};
 
         ampersand {
@@ -345,7 +346,7 @@
             key-positions = <62 61>;
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         percent {
@@ -353,7 +354,7 @@
             key-positions = <26 27>;
             timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         lessthan {
@@ -361,7 +362,7 @@
             key-positions = <50 51>;
             timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         greaterthan {
@@ -369,7 +370,7 @@
             key-positions = <58 59>;
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
 
         qmark {
@@ -377,7 +378,7 @@
             key-positions = <43 44>;
             timeout-ms = <SHORT_COMBO_TIMEOUT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
+            layers = <COMBO_LAYER>;
         };
     };
 
