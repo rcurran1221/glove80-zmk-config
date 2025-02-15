@@ -384,14 +384,22 @@
     keymap {
         compatible = "zmk,keymap";
 
-        nohmr {
+        default_layer {
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |  F1   |  F2 |  F3 |  F4  |  F5  |                                                               |  F6   |  F7   |  F8  |   F9  |  F10 |
+            // |  =    |  1  |  2  |  3   |  4   |  5   |                                                 |  6   |   7   |   8   |  9   |   0   |   -  |
+            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                                 |  Y   |   U   |   I   |  O   |   P   |   \  |
+            // |  ESC  |  A  |  S  |  D   |  F   |  G   |                                                 |  H   |   J   |   K   |  L   |   ;   |   '  |
+            // |   `   |  Z  |  X  |  C   |  V   |  B   | LSHFT | LCTRL | LOWER | | LGUI  | RCTRL | RSHFT |  N   |   M   |   ,   |  .   |   /   | PGUP |
+            // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
+
             bindings = <
-&kp F1      &kp F2    &kp F3   &kp F4    &kp F5                                                                                                  &kp F6  &kp F7     &kp F8    &kp F9         &mt F11 F10
-&kp EQUAL   &kp N1    &kp N2   &kp N3    &kp N4     &kp N5                                                                               &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
-&kp DEL     &kp Q     &kp W    &kp E     &kp R      &kp T                                                                                &kp Y   &kp U   &kp I      &kp O     &kp P          &kp BSLH
-&kp ESC     &kp A     &kp S    &kp D     &kp F      &kp G                                                                                &kp H   &kp J   &kp K      &kp L     &kp SEMICOLON  &kp SQT
-&kp GRAVE   &kp Z     &kp X    &kp C     &kp V      &kp B   &sl 4      &kp LEFT_CONTROL  &to 3  &kp RIGHT_GUI  &kp RIGHT_ALT  &shifty    &kp N   &kp M   &kp COMMA  &kp DOT   &kp SLASH      &kp PG_UP
-&magic 2 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT          &kp ENTER  &kp TAB           &sl 6  &sl 4          &kp BACKSPACE  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &kp PG_DN
+&kp F1      &kp F2           &kp F3           &kp F4               &kp F5                                                                                               &kp F6              &kp F7                &kp F8            &kp F9                    &mt F11 F10
+&kp EQUAL   &kp N1           &kp N2           &kp N3               &kp N4             &kp N5                                                                    &kp N6  &kp N7              &kp N8                &kp N9            &kp N0                    &kp MINUS
+&kp DEL     &kp Q            &kp W            &kp E                &kp R              &kp T                                                                     &kp Y   &kp U               &kp I                 &kp O             &kp P                     &kp BSLH
+&kp ESC     &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                                                                     &kp H   &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SQT
+&kp GRAVE   &lt_left 4 Z     &kp X            &kp C                &kp V              &kp B   &shifty    &shifty  &layer_td  &shifty  &kp RCTRL      &shifty    &kp N   &kp M               &kp COMMA             &kp DOT           &lt_right 4 SLASH         &kp PG_UP
+&magic 2 0  &kp HOME         &kp END          &kp LEFT             &kp RIGHT                  &kp ENTER  &kp TAB  &to 6      &sl 4    &kp BACKSPACE  &kp SPACE          &kp UP              &kp DOWN              &kp LBKT          &kp RBKT                  &kp PG_DN
             >;
         };
 
@@ -408,12 +416,12 @@
 
         magic_layer {
             bindings = <
-&bt BT_CLR   &none            &none            &none            &none                                                                                     &none  &none  &none  &none   &bt BT_CLR_ALL
-&none        &none            &none            &none            &none            &none                                                             &none  &none  &none  &none  &none   &none
-&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none  &none  &none  &none   &none
-&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none   &bootloader
-&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &none  &none  &none  &trans  &sys_reset
-&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &trans  &to 5
+&bt BT_CLR   &none            &none            &none            &none                                                                                     &none  &none  &none  &none  &bt BT_CLR_ALL
+&none        &none            &none            &none            &none            &none                                                             &none  &none  &none  &none  &none  &none
+&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none  &none  &none  &none  &none
+&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
+&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &none  &none  &none  &to 0  &sys_reset
+&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &to 7  &to 5
             >;
         };
 
@@ -461,22 +469,14 @@
             >;
         };
 
-        default_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |  F1   |  F2 |  F3 |  F4  |  F5  |                                                               |  F6   |  F7   |  F8  |   F9  |  F10 |
-            // |  =    |  1  |  2  |  3   |  4   |  5   |                                                 |  6   |   7   |   8   |  9   |   0   |   -  |
-            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                                 |  Y   |   U   |   I   |  O   |   P   |   \  |
-            // |  ESC  |  A  |  S  |  D   |  F   |  G   |                                                 |  H   |   J   |   K   |  L   |   ;   |   '  |
-            // |   `   |  Z  |  X  |  C   |  V   |  B   | LSHFT | LCTRL | LOWER | | LGUI  | RCTRL | RSHFT |  N   |   M   |   ,   |  .   |   /   | PGUP |
-            // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
-
+        nohmr {
             bindings = <
-&kp F1      &kp F2           &kp F3           &kp F4               &kp F5                                                                                           &kp F6              &kp F7                &kp F8            &kp F9                    &mt F11 F10
-&kp EQUAL   &kp N1           &kp N2           &kp N3               &kp N4             &kp N5                                                                &kp N6  &kp N7              &kp N8                &kp N9            &kp N0                    &kp MINUS
-&kp DEL     &kp Q            &kp W            &kp E                &kp R              &kp T                                                                 &kp Y   &kp U               &kp I                 &kp O             &kp P                     &kp BSLH
-&kp ESC     &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                                                                 &kp H   &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SQT
-&kp GRAVE   &lt_left 4 Z     &kp X            &kp C                &kp V              &kp B   &shifty    &shifty  &to 0  &shifty  &kp RCTRL      &shifty    &kp N   &kp M               &kp COMMA             &kp DOT           &lt_right 4 SLASH         &kp PG_UP
-&magic 2 0  &kp HOME         &kp END          &kp LEFT             &kp RIGHT                  &kp ENTER  &kp TAB  &to 6  &sl 4    &kp BACKSPACE  &kp SPACE          &kp UP              &kp DOWN              &kp LBKT          &kp RBKT                  &kp PG_DN
+&kp F1      &kp F2    &kp F3   &kp F4    &kp F5                                                                                                  &kp F6  &kp F7     &kp F8    &kp F9         &mt F11 F10
+&kp EQUAL   &kp N1    &kp N2   &kp N3    &kp N4     &kp N5                                                                               &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
+&kp DEL     &kp Q     &kp W    &kp E     &kp R      &kp T                                                                                &kp Y   &kp U   &kp I      &kp O     &kp P          &kp BSLH
+&kp ESC     &kp A     &kp S    &kp D     &kp F      &kp G                                                                                &kp H   &kp J   &kp K      &kp L     &kp SEMICOLON  &kp SQT
+&kp GRAVE   &kp Z     &kp X    &kp C     &kp V      &kp B   &shifty    &kp LEFT_CONTROL  &to 0  &kp RIGHT_GUI  &kp RIGHT_ALT  &shifty    &kp N   &kp M   &kp COMMA  &kp DOT   &kp SLASH      &kp PG_UP
+&magic 2 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT          &kp ENTER  &kp TAB           &sl 6  &sl 4          &kp BACKSPACE  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &kp PG_DN
             >;
         };
     };
