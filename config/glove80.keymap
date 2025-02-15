@@ -25,7 +25,7 @@
 #define MOD_FLAVOR "balanced"
 #define MOD_TAP_TERM 280
 #define MOD_QUICK_TAP 175
-#define COMBO_LAYER 0
+#define COMBO_LAYER 7
 
 &sk { quick-release; };
 
