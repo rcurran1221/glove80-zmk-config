@@ -379,6 +379,22 @@
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
         };
+
+        car {
+            bindings = <&hmr LS(LEFT_ALT) CARET>;
+            key-positions = <38 36>;
+            timeout-ms = <COMBO_TIMEOUT_LEFT>;
+            require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
+            layers = <0>;
+        };
+
+        dollar {
+            bindings = <&hmr RS(RIGHT_ALT) DOLLAR>;
+            key-positions = <41 43>;
+            timeout-ms = <SHORT_COMBO_TIMEOUT>;
+            require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
+            layers = <0>;
+        };
     };
 
     keymap {
