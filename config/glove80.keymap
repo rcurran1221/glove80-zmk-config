@@ -300,22 +300,6 @@
             layers = <0>;
         };
 
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <39 38>;
-            timeout-ms = <COMBO_TIMEOUT_LEFT>;
-            require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
-        };
-
-        caret {
-            bindings = <&kp CARET>;
-            key-positions = <35 36>;
-            timeout-ms = <COMBO_TIMEOUT_LEFT>;
-            require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
-        };
-
         bang {
             bindings = <&kp EXCLAMATION>;
             key-positions = <23 24>;
