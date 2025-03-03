@@ -24,7 +24,7 @@
 #define HOME_ROW_MOD_IDLE 150
 #define MOD_FLAVOR "balanced"
 #define MOD_TAP_TERM 280
-#define MOD_QUICK_TAP 175
+#define MOD_QUICK_TAP 200
 
 &sk { quick-release; };
 
