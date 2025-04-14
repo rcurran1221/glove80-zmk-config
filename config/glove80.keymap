@@ -396,6 +396,14 @@
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
         };
+
+        ampersand {
+            bindings = <&hmr LEFT_SHIFT AMPERSAND>;
+            key-positions = <38 25>;
+            timeout-ms = <COMBO_TIMEOUT_LEFT>;
+            require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
+            layers = <0>;
+        };
     };
 
     keymap {
