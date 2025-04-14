@@ -380,6 +380,22 @@
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
         };
+
+        star {
+            bindings = <&hmr RIGHT_SHIFT ASTERISK>;
+            key-positions = <41 29>;
+            timeout-ms = <SHORT_COMBO_TIMEOUT>;
+            require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
+            layers = <0>;
+        };
+
+        cash {
+            bindings = <&hmr RIGHT_CONTROL DOLLAR>;
+            key-positions = <42 30>;
+            timeout-ms = <SHORT_COMBO_TIMEOUT>;
+            require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
+            layers = <0>;
+        };
     };
 
     keymap {
