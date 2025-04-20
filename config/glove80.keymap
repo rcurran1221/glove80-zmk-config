@@ -310,8 +310,8 @@
         };
 
         at {
-            bindings = <&kp AT_SIGN>;
-            key-positions = <47 48>;
+            bindings = <&hml LEFT_SHIFT AT>;
+            key-positions = <49 38>;
             timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
@@ -325,17 +325,9 @@
         //layers = <0>;
         //};
 
-        ampersand {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <62 61>;
-            timeout-ms = <SHORT_COMBO_TIMEOUT>;
-            require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
-        };
-
         percent {
-            bindings = <&kp PERCENT>;
-            key-positions = <26 27>;
+            bindings = <&hml LEFT_ALT PERCENT>;
+            key-positions = <37 50>;
             timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
@@ -400,6 +392,14 @@
         ampersand {
             bindings = <&hmr LEFT_SHIFT AMPERSAND>;
             key-positions = <38 25>;
+            timeout-ms = <COMBO_TIMEOUT_LEFT>;
+            require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
+            layers = <0>;
+        };
+
+        excl {
+            bindings = <&hmr LEFT_ALT EXCL>;
+            key-positions = <25 36>;
             timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
