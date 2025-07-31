@@ -423,13 +423,8 @@
 &kp EQUAL   &kp N1           &kp N2           &kp N3               &kp N4             &kp N5                                                                    &kp N6  &kp N7              &kp N8                &kp N9            &kp N0                    &kp MINUS
 &kp DEL     &kp Q            &kp W            &kp E                &kp R              &kp T                                                                     &kp Y   &kp U               &kp I                 &kp O             &kp P                     &kp BSLH
 &kp ESC     &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                                                                     &kp H   &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SQT
-<<<<<<< HEAD
 &kp GRAVE   &kp Z            &kp X            &kp C                &kp V              &kp B   &to 7      &sl 6    &layer_td  &shifty  &kp RCTRL      &shifty    &kp N   &kp M               &kp COMMA             &kp DOT           &kp SLASH                 &kp PG_UP
 &magic 2 0  &kp HOME         &kp LEFT         &kp RIGHT            &shifty                    &kp ENTER  &kp TAB  &sl 6      &shifty  &kp BACKSPACE  &kp SPACE          &shifty             &kp DOWN              &kp UP_ARROW      &kp RBKT                  &kp PG_DN
-=======
-&kp GRAVE   &lt_left 4 Z     &kp X            &kp C                &kp V              &kp B   &to 7      &sl 6    &layer_td  &shifty  &kp RCTRL      &shifty    &kp N   &kp M               &kp COMMA             &kp DOT           &lt_right 4 SLASH         &kp PG_UP
-&magic 2 0  &kp HOME         &kp END          &kp LEFT             &kp RIGHT                  &kp ENTER  &kp TAB  &sl 6      &sl 4    &kp BACKSPACE  &kp SPACE          &kp UP              &kp DOWN              &kp LBKT          &kp RBKT                  &kp PG_DN
->>>>>>> parent of e0776f7 (Updated glove80.keymap)
             >;
         };
 
