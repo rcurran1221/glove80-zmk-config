@@ -404,6 +404,26 @@
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
         };
+
+        b {
+            bindings = <&hmr RS(RIGHT_CONTROL) BACKSPACE>;
+            key-positions = <31 32>;
+            layers = <0 6 1>;
+        };
+
+        tab {
+            bindings = <&hml LS(LEFT_CONTROL) TAB>;
+            key-positions = <28 27>;
+            layers = <0>;
+        };
+
+        td_layer_num: td_layer_num {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_LAYER_NUM";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&sl 1>, <&to 6>;
+        };
     };
 
     keymap {
