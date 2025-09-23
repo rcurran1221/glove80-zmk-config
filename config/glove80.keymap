@@ -229,14 +229,6 @@
         compatible = "zmk,combos";
         require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
 
-        left_parent {
-            bindings = <&hmr RS(RIGHT_CONTROL) LEFT_PARENTHESIS>;
-            key-positions = <41 42>;
-            timeout-ms = <SHORT_COMBO_TIMEOUT>;
-            require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
-        };
-
         right_paren {
             bindings = <&hmr RC(RIGHT_ALT) RIGHT_PARENTHESIS>;
             key-positions = <42 43>;
@@ -280,14 +272,6 @@
         underscore {
             bindings = <&hmr LC(LEFT_ALT) UNDERSCORE>;
             key-positions = <37 36>;
-            timeout-ms = <COMBO_TIMEOUT_LEFT>;
-            require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
-            layers = <0>;
-        };
-
-        dash {
-            bindings = <&hmr LS(LEFT_CONTROL) MINUS>;
-            key-positions = <38 37>;
             timeout-ms = <COMBO_TIMEOUT_LEFT>;
             require-prior-idle-ms = <PRIOR_IDLE_COMBO>;
             layers = <0>;
