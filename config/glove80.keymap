@@ -178,6 +178,15 @@
             flavor = "balanced";
             hold-trigger-key-positions = <54 71 70 53 52 69 68 51 50 38 39 27 26 14 4 15 3 13 25 37 49 67 66 36 24 12 2 1 11 23 35 47 48 65 64 46 34 22 10 0 55 56 57 74 73 72>;
         };
+
+
+        td_layer_num: td_layer_num {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_LAYER_NUM";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&sl 1>, <&to 6>;
+        };
     };
 
     macros {
@@ -417,13 +426,6 @@
             layers = <0>;
         };
 
-        td_layer_num: td_layer_num {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LAYER_NUM";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&sl 1>, <&to 6>;
-        };
     };
 
     keymap {
